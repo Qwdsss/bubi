@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-7o5nrkn7-_yqxj5zioau-08tb1itj1v^nkl4()3)lb9+@l8!cd
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['104.248.5.216', 'localhost']
+ALLOWED_HOSTS = ["104.248.5.216", "127.0.0.1"]
 
 
 # Application definition
@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'bubi_app'
+    'bubi_app',
 ]
 
 MIDDLEWARE = [
