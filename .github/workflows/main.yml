@@ -21,7 +21,7 @@ jobs:
         host: 104.248.5.216
         username: ${{ secrets.USERNAME }}
         password: ${{ secrets.PASSWORD }}
-        port: 8000
+        port: 22
         script: |
           cd /root/bubi
           source /venv/bin/activate
