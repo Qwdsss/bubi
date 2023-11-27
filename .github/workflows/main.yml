@@ -25,5 +25,7 @@ jobs:
             source /venv/bin/activate
             git pull
             python manage.py migrate
+          env:
+            SSH_AUTH_SOCK: /dev/null
             python manage.py collectstatic --noinput
             supervisorctl restart all
