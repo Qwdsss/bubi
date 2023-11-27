@@ -24,7 +24,7 @@ jobs:
         port: 8000
         script: |
           cd /root/bubi
-          source ./venv/bin/activate
+          source /venv/bin/activate
           git pull
           python manage.py migrate
           python manage.py collectstatic --noinput
