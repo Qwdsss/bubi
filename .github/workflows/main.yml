@@ -18,4 +18,4 @@ jobs:
 
       - name: Deploy to Server
         run: |
-          sshpass -p "${{ secrets.PASSWORD }}" ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -p 22 root@104.248.5.216 "cd /root/bubi && source /venv/bin/activate && git pull && python manage.py migrate && python manage.py collectstatic --noinput && supervisorctl restart all"
+          sshpass -p "${{ secrets.PASSWORD }}" ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -p 22 root@104.248.5.216 "cd /root/bubi && source /root/venv/bin/activate && git pull && python manage.py migrate && python manage.py collectstatic --noinput && supervisorctl restart all"
